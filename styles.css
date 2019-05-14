@@ -1,0 +1,27 @@
+h1
+{
+    font-family: 'VT323', ;
+    font-weight: 400;
+}
+
+body
+{
+    background-color:#2F4696;
+    text-align:center;
+    color:#FFFFFF;
+    
+}
+
+.time {
+  text-align: right;
+}
+
+#platform
+{
+    padding-top: 30px;
+    color:#FFFFFF;
+    font-family: 'VT232', 'sans';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
