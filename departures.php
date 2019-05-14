@@ -79,14 +79,13 @@ foreach($lines as $line){
 
 //Sort
 
-function build_sorter($key) {
-    return function ($a, $b) use ($key) {
-        return strnatcmp($a[$key], $b[$key]);
-    };
-}
 
-usort($ebdepartures, build_sorter("TimeTo"));
-usort($wbdepartures, build_sorter("TimeTo"));
+function TimeSort($a, $b) {
+    return strnatcmp($a["TimeTo"], $b["TimeTo"]);
+};
+
+usort($ebdepartures, "TimeSort");
+usort($wbdepartures, "TimeSort");
 
 //Display
 echo "<tr><td id=\"platform\">", "Platform 1 - Eastbound", "<br /></td></tr>";
